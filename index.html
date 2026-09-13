@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awayzo | Expedition Report</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">◆</span>
+      <div>
+        <h1>Awayzo</h1>
+        <p>EXPEDITION REPORT</p>
+      </div>
+    </div>
+    <div class="status" aria-label="Expedition status">
+      <span class="status-dot"></span> SYSTEM STATUS: UNSTABLE
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">WEEK 3 • KAIROVA EXPEDITION</p>
+        <h2>The World Is Crumbling</h2>
+        <p class="hero-text">
+          Follow Awayzo through a world that is falling apart. Explore the evidence,
+          discover what caused the problem, and decide how to respond.
+        </p>
+        <button class="primary-btn" id="beginBtn">Begin Expedition</button>
+      </div>
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="planet"></div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+      </div>
+    </section>
+
+    <nav class="scene-nav" aria-label="Expedition scenes">
+      <button class="scene-btn active" data-scene="0">01 <span>Destination</span></button>
+      <button class="scene-btn" data-scene="1">02 <span>Character</span></button>
+      <button class="scene-btn" data-scene="2">03 <span>Discovery</span></button>
+      <button class="scene-btn" data-scene="3">04 <span>Outcome</span></button>
+    </nav>
+
+    <section class="report-card" aria-live="polite">
+      <div class="scene-counter">SCENE <span id="sceneNumber">01</span> / 04</div>
+      <h3 id="sceneTitle">Destination: Kairova</h3>
+      <p id="sceneText"></p>
+
+      <img id="sceneImage" class="scene-image" src="images/kairova.jpg"
+        alt="A ruined landscape in Kairova">
+
+      <div class="evidence-box">
+        <div class="evidence-label">MISSION EVIDENCE</div>
+        <p id="evidenceText"></p>
+      </div>
+
+      <div class="action-box" id="actionBox">
+        <h4>Test the evidence</h4>
+        <p id="actionPrompt"></p>
+        <div id="choices" class="choices"></div>
+        <p id="feedback" class="feedback" role="status"></p>
+      </div>
+
+      <div class="controls">
+        <button class="secondary-btn" id="prevBtn">← Previous</button>
+        <button class="primary-btn" id="nextBtn">Next →</button>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h3>What you are practicing</h3>
+      <div class="skill-grid">
+        <article><span>01</span><h4>Observe</h4><p>Pay attention to clues and changes in the environment.</p></article>
+        <article><span>02</span><h4>Analyze</h4><p>Use evidence to understand what is really happening.</p></article>
+        <article><span>03</span><h4>Respond</h4><p>Make a decision based on what you have discovered.</p></article>
+        <article><span>04</span><h4>Reflect</h4><p>Connect the outcome to what you learned.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Awayzo Expedition Report • Four-scene interactive story</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
